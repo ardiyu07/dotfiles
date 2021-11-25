@@ -1,0 +1,43 @@
+export PATH=$PATH:~/Dropbox/sh_script/
+
+# personal info
+export EMAIL="ardiyu07@gmail.com"
+export NAME="Yuri Ardila"
+
+# set compute profiler
+export COMPUTE_PROFILE=1
+export COMPUTE_PROFILE_CONFIG=prof.conf
+
+export LESSOPEN="| src-hilite-lesspipe.sh %s"
+export LESS=' -R '
+
+export PATH=/opt/centos/devtoolset-1.1/root/usr/bin/:/usr/local/cuda/bin:/usr/local/heroku/bin:/usr/pgsql-9.3/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:/usr/local/lib/:$LD_LIBRARY_PATH
+
+# set path for texlive
+export PATH=/usr/local/texlive/2014/bin/x86_64-linux/:/opt/local/bin/:$PATH
+
+# set path for java
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/"
+
+export LANG=""
+export LC_CTYPE=""
+export LC_NUMERIC=""
+export LC_TIME=""
+export LC_COLLATE=""
+export LC_MONETARY=""
+export LC_MESSAGES=""
+export LC_ALL=""
+
+# set path for mysql
+export PATH="/usr/local/mysql/bin:$PATH"
+export LANG=en_US.UTF-8
+
+# include locally installed Cassandra in PATH
+if [ -d "$HOME/opt" ]; then
+    PATH="$PATH:$HOME/opt/apache-cassandra-2.1.7/bin"
+fi
+
+export C_INCLUDE_PATH="/usr/local/include"
+export PATH="$HOME/.npm-packages/bin:$PATH"
+export BOOST_ROOT="/usr/local/share/boost"
